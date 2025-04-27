@@ -1,4 +1,5 @@
 import random
+import os
 
 WORDS = [
     "about", "after", "again", "below", "could", "every", "first", "found", "great", "heart",
@@ -16,3 +17,13 @@ WORDS = [
     "lever", "steer", "store", "strip", "straw", "sweep", "horse", "think", "thick", "touch",
     "trace", "trust", "unite", "verse", "video", "voice", "vowel", "plant", "wrist", "zebra"
 ]
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def get_valid_guess():
+    while True:
+        guess = input("Sisesta oma pakkumine (5 tähte): ").lower()
+        if len(guess) == 5 and guess.isalpha():
+            return guess
+        print("Viga! Palun sisesta täpselt 5 tähte.")
