@@ -1,0 +1,1 @@
+print("See on meie wordle projekt")
