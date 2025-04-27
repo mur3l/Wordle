@@ -27,3 +27,24 @@ def get_valid_guess():
         if len(guess) == 5 and guess.isalpha():
             return guess
         print("Viga! Palun sisesta täpselt 5 tähte.")
+
+def check_guess(guess, target):
+    result = []
+    target_list = list(target)
+
+    """First pass: mark correct letters"""
+    for i in range(5):
+        if guess[i] == target[i]:
+            result.append("")  # Correct letter, correct position
+            target_list[i] = None
+        else:
+            result.append("")  # Wrong letter
+
+    """Second pass: mark letters in wrong position"""
+    for i in range(5):
+        if result[i] == "":
+            if guess[i] in target_list:
+                result[i] = ""  # Correct letter, wrong position
+                target_list[target_list.index(guess[i])] = None
+
+    return "".join(result)
