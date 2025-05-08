@@ -2,7 +2,8 @@
 
 Robert Tarlap ja Tauno Tippi Projekti eskiis koos tegevuskavaga:
 https://docs.google.com/document/d/1NN9tZLqM15r42DGtozyBQwr3_zNot9gI5FGrbHLcTOU/edit?usp=sharing
-Esitlus: https://docs.google.com/presentation/d/1TFWar9lDZAHRKeVsw7JqTlsynkZCN8bwpwTRgBXR3WE/edit?usp=sharing
+Esitlus: 
+https://docs.google.com/presentation/d/1TFWar9lDZAHRKeVsw7JqTlsynkZCN8bwpwTRgBXR3WE/edit?usp=sharing
 
 User manual:
 1. Run program "Wordle.py"
